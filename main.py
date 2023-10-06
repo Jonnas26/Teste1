@@ -1,14 +1,14 @@
 from random import shuffle,sample
 from time import sleep
-jogadores = []
+jogadores = [] # onde os nomes dos jogadores ficaram
 campeoes = ['Voli','Zac','Mundo','Sion','Chogat',
            'Vayne','Xayah','Jhin','Nilah','Samira',
-           'Xinzao','Khazix','Lee','Jarvan','Noc']
+           'Xinzao','Khazix','Lee','Jarvan','Noc'] # lista de campeôes LOL
 for p in range(0,10):
-    jogadores.append(str(input('Nome jogador:')))
+    jogadores.append(str(input('Nome jogador:'))) 
 print('*'*30)
-shuffle(jogadores)
-champs = sample(campeoes,10)
+shuffle(jogadores) # embaralhar os jogadores
+champs = sample(campeoes,10) # embaralhar a lista de campeões
 print('Sorteando os times')
 sleep(1)
 print('.')
